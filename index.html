@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css"> 
+<body>
+    <h1>ToDO List</h1>
+    <div class="mainDiv">
+        <div class="insideDiv">
+        <input placeholder="Write..." type="text" size="60">
+        <button onclick="add()">Add</button>
+        </div>
+    <ol>
+
+    </ol>
+    </div>
+</body>
+<script>
+    function add(){
+        let todo=document.querySelector("input").value
+        document.querySelector("ol").innerHTML += `<li> ${todo} </li>`
+        document.querySelector("input").value= " "
+    }
+    
+</script>
+</html>
